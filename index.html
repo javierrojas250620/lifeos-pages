@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Página exigida por Google para publicar la app OAuth. No se indexa en buscadores. -->
+  <meta name="robots" content="noindex">
+  <title>LifeOS</title>
+  <style>
+    :root { color-scheme: light dark; --ink: #1d1d1f; --muted: #5f6368; --bg: #fff; --accent: #2a78d6; }
+    @media (prefers-color-scheme: dark) { :root { --ink: #ececec; --muted: #a0a4a8; --bg: #161618; --accent: #6aa6ef; } }
+    body { margin: 0; background: var(--bg); color: var(--ink); font: 16px/1.6 system-ui, -apple-system, "Segoe UI", sans-serif; }
+    main { max-width: 42rem; margin: 0 auto; padding: 3rem 1rem; }
+    h1 { margin: 0 0 .25rem; font-size: 2rem; }
+    p.lead { margin-top: 0; color: var(--muted); }
+    a { color: var(--accent); }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>LifeOS</h1>
+    <p class="lead">Aplicación personal para organizar agenda, entrenamiento, descanso y finanzas.</p>
+
+    <p>
+      LifeOS es una aplicación <strong>autoalojada y de uso personal</strong>: corre en el computador de su dueño y no es un
+      servicio ofrecido al público. No tiene registro abierto de usuarios.
+    </p>
+
+    <h2>Integración con Google Calendar</h2>
+    <p>
+      De forma opcional, LifeOS copia los eventos de su agenda a un calendario llamado «LifeOS» dentro de la cuenta de Google
+      de su dueño. Usa únicamente el permiso <code>calendar.app.created</code>, que solo le permite crear ese calendario y
+      gestionar sus eventos. No lee ni modifica ningún otro calendario.
+    </p>
+
+    <p><a href="privacidad.html">Política de privacidad</a></p>
+  </main>
+</body>
+</html>

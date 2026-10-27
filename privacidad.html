@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Página exigida por Google para publicar la app OAuth. No se indexa en buscadores. -->
+  <meta name="robots" content="noindex">
+  <title>Privacidad de LifeOS</title>
+  <style>
+    :root { color-scheme: light dark; --ink: #1d1d1f; --muted: #5f6368; --bg: #fff; --accent: #2a78d6; }
+    @media (prefers-color-scheme: dark) { :root { --ink: #ececec; --muted: #a0a4a8; --bg: #161618; --accent: #6aa6ef; } }
+    body { margin: 0; background: var(--bg); color: var(--ink); font: 16px/1.6 system-ui, -apple-system, "Segoe UI", sans-serif; }
+    main { max-width: 42rem; margin: 0 auto; padding: 3rem 1rem; }
+    h1 { margin: 0 0 .25rem; font-size: 2rem; }
+    p.lead { margin-top: 0; color: var(--muted); }
+    a { color: var(--accent); }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Política de privacidad</h1>
+    <p class="lead">LifeOS · última actualización: 27 de octubre de 2026</p>
+
+    <h2>Qué es LifeOS</h2>
+    <p>
+      LifeOS es una aplicación autoalojada y de uso personal. Corre en el computador de su dueño, que es también su único
+      usuario. No es un servicio ofrecido al público.
+    </p>
+
+    <h2>Datos de Google a los que accede</h2>
+    <p>
+      Solo si su dueño conecta Google Calendar, LifeOS solicita el permiso
+      <code>https://www.googleapis.com/auth/calendar.app.created</code>. Con él:
+    </p>
+    <ul>
+      <li>Crea un calendario secundario llamado «LifeOS» en la cuenta de Google del usuario.</li>
+      <li>Crea, actualiza y elimina eventos <strong>solo en ese calendario</strong>: título, horario, categoría y notas de los eventos que el usuario registró en LifeOS.</li>
+      <li>No lee, copia ni modifica ningún otro calendario, contacto, correo ni archivo de la cuenta.</li>
+    </ul>
+
+    <h2>Dónde se guardan los datos</h2>
+    <ul>
+      <li>Los datos de LifeOS se guardan en una base de datos en el propio computador del usuario.</li>
+      <li>Los tokens de acceso de Google se guardan cifrados en esa misma base y solo se usan para sincronizar el calendario «LifeOS».</li>
+      <li>LifeOS no tiene servidores propios en Internet: los datos solo viajan entre el computador del usuario y Google.</li>
+    </ul>
+
+    <h2>Uso y divulgación</h2>
+    <ul>
+      <li>LifeOS no vende, comparte ni transfiere datos a terceros.</li>
+      <li>No usa los datos con fines publicitarios ni para entrenar modelos de inteligencia artificial.</li>
+      <li>
+        El uso y la transferencia de la información recibida de las APIs de Google cumplen la
+        <a href="https://developers.google.com/terms/api-services-user-data-policy">Política de Datos del Usuario de los Servicios de las APIs de Google</a>,
+        incluidos los requisitos de Uso Limitado.
+      </li>
+    </ul>
+
+    <h2>Cómo revocar el acceso</h2>
+    <p>
+      El usuario puede desconectar Google Calendar desde la Agenda de LifeOS o quitar el acceso en cualquier momento en
+      <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>. El calendario «LifeOS» puede
+      eliminarse desde Google Calendar.
+    </p>
+
+    <p><a href="index.html">Volver a LifeOS</a></p>
+  </main>
+</body>
+</html>
